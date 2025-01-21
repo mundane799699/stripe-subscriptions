@@ -98,6 +98,7 @@ export const Navbar = () => {
               <Link
                 rel="noreferrer noopener"
                 href="/api/auth/logout"
+		prefetch={false}
                 className={`border ${buttonVariants({ variant: "secondary" })}`}
               >
                 Logout
@@ -109,6 +110,7 @@ export const Navbar = () => {
               <Link
                 rel="noreferrer noopener"
                 href="/api/auth/login"
+		prefetch={false}
                 className={`border ${buttonVariants({ variant: "secondary" })}`}
               >
                 Login
