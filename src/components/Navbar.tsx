@@ -91,14 +91,11 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <span className="text-[17px]">
-              {`isAuthenticated: ${isAuthenticated}`}
-            </span>
             {isAuthenticated && (
               <Link
                 rel="noreferrer noopener"
                 href="/api/auth/logout"
-		prefetch={false}
+                prefetch={false}
                 className={`border ${buttonVariants({ variant: "secondary" })}`}
               >
                 Logout
@@ -110,7 +107,7 @@ export const Navbar = () => {
               <Link
                 rel="noreferrer noopener"
                 href="/api/auth/login"
-		prefetch={false}
+                prefetch={false}
                 className={`border ${buttonVariants({ variant: "secondary" })}`}
               >
                 Login
